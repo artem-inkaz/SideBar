@@ -9,7 +9,7 @@
     >
 
     <ImageView
-        android:id="@+id/imgV_user"
+        android:id="@+id/imgV_user_header_main"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="@dimen/margin_start_header_main_txtV"
@@ -22,7 +22,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/txtV_name_user"
+        android:id="@+id/txtV_name_user_header_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_user_name_header_main"
@@ -30,10 +30,10 @@
         android:textColor="@color/colorTextHeaderMain"
         android:layout_margin="@dimen/margin_start_header_main_txtV"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/imgV_user"/>
+        app:layout_constraintStart_toEndOf="@id/imgV_user_header_main"/>
 
     <TextView
-        android:id="@+id/txtV_settings"
+        android:id="@+id/txtV_settings_header_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_header_main_settings"
@@ -41,7 +41,7 @@
         android:textSize="@dimen/dimen_setting_header_main"
         android:layout_marginStart="@dimen/margin_start_header_main_txtV"
 
-        app:layout_constraintTop_toBottomOf="@id/txtV_name_user"
-        app:layout_constraintStart_toEndOf="@id/imgV_user"
+        app:layout_constraintTop_toBottomOf="@id/txtV_name_user_header_main"
+        app:layout_constraintStart_toEndOf="@id/imgV_user_header_main"
         app:layout_constraintBottom_toBottomOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
