@@ -2,37 +2,25 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navigation_graph"
+    android:id="@+id/mobile_navigation"
     app:startDestination="@id/startFragment">
-
     <fragment
         android:id="@+id/startFragment"
-        android:name="com.example.sidebar.StartFragment"
-        android:label="fragment_start"
+        android:name="com.example.sidebar.HomeFragment"
+        android:label="HOME"
         tools:layout="@layout/fragment_start" >
-        <action
-            android:id="@+id/action_startFragment_to_secondFragment"
-            app:destination="@id/secondFragment" />
-        <action
-            android:id="@+id/action_startFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.sidebar.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" >
-        <action
-            android:id="@+id/action_secondFragment_to_startFragment"
-            app:destination="@id/startFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
         android:name="com.example.sidebar.ThirdFragment"
         android:label="fragment_third"
-        tools:layout="@layout/fragment_third" >
-        <action
-            android:id="@+id/action_thirdFragment_to_startFragment"
-            app:destination="@id/startFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_third" />
 </navigation>
